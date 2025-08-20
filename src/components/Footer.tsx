@@ -1,30 +1,27 @@
-import React from "react";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Twitter,
-  Linkedin,
-  Instagram,
-  Github,
-  Heart,
-} from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { FaInstagram } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   const today = new Date();
   const socialLinks = [
     {
-      icon: <Twitter size={20} />,
+      icon: <FaXTwitter size={20} />,
       href: "https://x.com/damidesign_?s=21",
       label: "Twitter",
     },
-    { icon: <Linkedin size={20} />, href: "#", label: "LinkedIn" },
+
     {
-      icon: <Instagram size={20} />,
+      icon: <FaInstagram size={20} />,
       href: "https://www.instagram.com/damidesign__?igsh=MWxxaTMyYTF2bnVjNA%3D%3D&utm_source=qr",
       label: "Instagram",
     },
-    { icon: <Github size={20} />, href: "#", label: "Github" },
+    {
+      icon: <FaLinkedinIn size={20} />,
+      href: "",
+      label: "LinkedIn",
+    },
   ];
 
   const quickLinks = [
@@ -50,7 +47,7 @@ const Footer = () => {
     {
       icon: <Phone size={16} />,
       text: "+234 903 911 5985",
-      href: "tel:+15551234567",
+      href: "+234 903 911 5985",
     },
     { icon: <MapPin size={16} />, text: "Nigeria", href: "#" },
   ];
@@ -162,7 +159,7 @@ const Footer = () => {
                 All rights reserved © {today.getFullYear()} DamiDesign.
               </span>
             </div>
-            <div className="flex space-x-6 text-sm">
+            <div className="flex  space-x-6 text-sm">
               <a
                 href="#"
                 className="text-slate-400 hover:text-orange-500 transition-colors duration-300"
