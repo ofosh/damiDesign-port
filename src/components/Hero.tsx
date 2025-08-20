@@ -1,4 +1,3 @@
-import React from "react";
 import { ArrowDown, Download } from "lucide-react";
 import CV from "../assets/cv.pdf";
 
